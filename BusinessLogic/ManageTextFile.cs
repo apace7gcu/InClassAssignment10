@@ -30,7 +30,7 @@ namespace BusinessLogic
             this.textFileName = textFileName;
             this.fileDirectory = fileDirectory;
             fullDirLocation = fileDirectory + @"\" + textFileName;
-            //Create an instance of  the class q=and cute the constructor
+            //Create an instance of  the class and que the constructor
 
             passingData = new ReadTextFile();
         }

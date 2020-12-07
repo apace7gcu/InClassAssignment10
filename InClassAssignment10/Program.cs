@@ -4,7 +4,15 @@ using BusinessLogic;
 
 
 namespace InClassAssignment10
-{
+{ 
+    /*
+     * Amanda Pace
+     * CST-117 Bill Hughes
+     * 
+     * This is a text reader that parses a string for certain requirements.
+     * 
+     * This assignment was done together in class.    
+     */
     class Program
     {
         static void Main(string[] args)

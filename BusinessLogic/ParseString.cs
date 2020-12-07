@@ -52,7 +52,7 @@ namespace BusinessLogic
 
             string[] arrIndWords = parseWords(fileContents);
 
-            //Iterate through the array and detect last car
+            //Iterate through the array and detect last char
 
             foreach (string word in arrIndWords)
             {
