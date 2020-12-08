@@ -38,6 +38,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.bttnAddItem = new System.Windows.Forms.Button();
             this.dgInventory = new System.Windows.Forms.DataGridView();
+            this.bttnDeleteItem = new System.Windows.Forms.Button();
+            this.cboItem = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgInventory)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,16 +121,36 @@
             // dgInventory
             // 
             this.dgInventory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgInventory.Location = new System.Drawing.Point(12, 36);
+            this.dgInventory.Location = new System.Drawing.Point(12, 87);
             this.dgInventory.Name = "dgInventory";
-            this.dgInventory.Size = new System.Drawing.Size(503, 402);
+            this.dgInventory.Size = new System.Drawing.Size(503, 351);
             this.dgInventory.TabIndex = 9;
+            // 
+            // bttnDeleteItem
+            // 
+            this.bttnDeleteItem.Location = new System.Drawing.Point(62, 43);
+            this.bttnDeleteItem.Name = "bttnDeleteItem";
+            this.bttnDeleteItem.Size = new System.Drawing.Size(141, 38);
+            this.bttnDeleteItem.TabIndex = 10;
+            this.bttnDeleteItem.Text = "Delete Inventry Item";
+            this.bttnDeleteItem.UseVisualStyleBackColor = true;
+            this.bttnDeleteItem.Click += new System.EventHandler(this.bttnDeleteItem_Click);
+            // 
+            // cboItem
+            // 
+            this.cboItem.FormattingEnabled = true;
+            this.cboItem.Location = new System.Drawing.Point(472, 31);
+            this.cboItem.Name = "cboItem";
+            this.cboItem.Size = new System.Drawing.Size(121, 21);
+            this.cboItem.TabIndex = 12;
             // 
             // InventoryDisplay
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cboItem);
+            this.Controls.Add(this.bttnDeleteItem);
             this.Controls.Add(this.dgInventory);
             this.Controls.Add(this.bttnAddItem);
             this.Controls.Add(this.label4);
@@ -159,6 +181,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button bttnAddItem;
         private System.Windows.Forms.DataGridView dgInventory;
+        private System.Windows.Forms.Button bttnDeleteItem;
+        private System.Windows.Forms.ComboBox cboItem;
     }
 }
 

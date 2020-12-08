@@ -32,7 +32,36 @@ namespace BusinessLogic
 
             return (myInventory);
 
-           // myInventory.Add(new InventoryObject(1, "Shirt", 2.99m, "Shirt for a small person."));
+            // myInventory.Add(new InventoryObject(1, "Shirt", 2.99m, "Shirt for a small person."));
+        }
+
+        public List<InventoryObject> deleteFromList()
+        {
+            //Delete an item in the list
+
+            //We need to get the indexof the item to delete
+
+            int indexElement = 0;
+
+            //Iterate through the list and test for the match
+
+            foreach (var element in myInventory)
+            {
+                if (element.itemNumber.Equals(itemNumber))
+                {
+                    //If there is a match, remove the row at the index
+                    myInventory.RemoveAt(indexElement);
+
+                    return myInventory;
+
+                }
+
+                else
+                {
+                    indexElement++;
+                }
+            }
+            return myInventory;
         }
     }
 }
